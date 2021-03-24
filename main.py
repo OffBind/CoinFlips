@@ -3,9 +3,10 @@ import random
 results = []
 sum = 0
 
+numberOfFlips = int(input('Flip it this many times: '))
+
 # 0 is tales and 1 is heads
-for i in range(1000000):
-    # do this a millon times
+for i in range(numberOfFlips):
     results.append(random.randint(0, 1))
 
 for num in results:
