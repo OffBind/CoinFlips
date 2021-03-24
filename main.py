@@ -1,9 +1,13 @@
 import random
+import sys
 
 results = []
 sum = 0
 
-numberOfFlips = int(input('Flip it this many times: '))
+if sys.argv[0] == None:
+    numberOfFlips = int(input('Flip it this many times: '))
+else:
+    numberOfFlips = int(sys.argv[0])
 
 # 0 is tales and 1 is heads
 for i in range(numberOfFlips):
