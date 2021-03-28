@@ -4,13 +4,10 @@ import sys
 results = []
 sum = 0
 
-if sys.argv[0] == None:
-    numberOfFlips = int(input('Flip it this many times: '))
-else:
-    numberOfFlips = int(sys.argv[0])
+flips = int(sys.argv[1])
 
 # 0 is tales and 1 is heads
-for i in range(numberOfFlips):
+for i in range(flips):
     results.append(random.randint(0, 1))
 
 for num in results:
