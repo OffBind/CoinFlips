@@ -6,14 +6,13 @@
 ## Requirements
 ```
 - python 3.X
-- git
+- git ( only required if cloning from repository )
 ```
 
 ## Instructions
+### Cloning from repository
 ```
 git clone https://github.com/OffBind/CoinFlips.git
 cd CoinFlips
-python3 main.py
+python3 main.py <flips>
 ```
-
-### After launching you can enter how many times you want to flip or you can pass it as an argument
